@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>ZOMATO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-img">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><b>ZOMATO</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse  nav justify-content-end" id="navbarSupportedContent">
+          <ul class="nav justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><B>LOGIN </B></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><B>SIGNUP</B></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <p class="zomato">Zomato</p>
+            </div>
+            <div class="input-group mb-3  p-auto ">
+              <input type="text" class="form-control" placeholder="Search for dishes or cuisines" aria-label="Recipient's username " aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+                </div>
+          </div>
+
+        </div>
+    </div>
+
+    <section id="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapersdsc.net%2Fwp-content%2Fuploads%2F2016%2F09%2FJunk-Food-Computer-Wallpaper.jpg&f=1&nofb=1" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsites.psu.edu%2Fmeganalvarezrcl%2Fwp-content%2Fuploads%2Fsites%2F5598%2F2013%2F10%2Ffriends-eating-out.jpg&f=1&nofb=1" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Night Life</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.heart.org%2F-%2Fmedia%2Faha%2Fh4gm%2Farticle-images%2Ffriends-dining-out.jpg&f=1&nofb=1" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Zomato Gold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="cityname">Enter the City name:&nbsp;</label>
+            <input type="text" class="form-control" id="cityname" placeholder="City name">
+          </div>
+          <button  type="submit" class="btn btn-primary ml-2" onclick="getcollections()">City Collections </button>
+          <button  type="submit" class="btn btn-secondary ml-2" onclick="getrestaurents()">Restaurants</button>
+        </form>
+      </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
